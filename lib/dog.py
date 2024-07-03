@@ -27,7 +27,7 @@ class Dog:
         if isinstance(value, str) and 1 <= len(value) <= 25:
             self._name = value
         else:
-            print("Name must be string between 1 and 25 characters.")
+            raise ValueError("Name must be string between 1 and 25 characters.")
 
     @property
     def breed(self):
